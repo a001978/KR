@@ -52,7 +52,9 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
     let authorCode = "";
     if(helpAuthorFlag){
         try{
+
             helpAuthorInfo = await getAuthorCodeList('');
+
         }catch (e) {}
         if(!helpAuthorInfo){
             helpAuthorInfo = [];
